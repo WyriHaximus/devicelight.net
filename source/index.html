@@ -1,0 +1,20 @@
+---
+layout: default
+full_title: DeviceLight.net &mdash; Test your device's sensor
+slug: index
+---
+
+<strong>devicelight:</strong>&nbsp;<span id="devicelight_value"><font style="color: red;">Not supported on your device</font></span><br />
+<strong>lightlevel:</strong>&nbsp;<span id="devicelightlevel_value"><font style="color: red;">Not supported on your device</font></span></p>
+
+<script>
+    window.addEventListener('devicelight', function(event) {
+        document.querySelector('#devicelight_value').textContent = event.value + ' lux';
+        document.querySelector('#devicelight_value').style.color = 'green';
+    });
+
+    window.addEventListener('lightlevel', function(event) {
+        document.querySelector('#devicelightlevel_value').textContent = event.value;
+        document.querySelector('#devicelightlevel_value').style.color = 'green';
+    });
+</script>
