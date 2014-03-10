@@ -1,0 +1,9 @@
+{
+    "name": "DeviceLight.net",
+    "ignore": [
+        ".jshintrc",
+        "**/*"
+    ],
+    "dependencies": {
+    }
+}
