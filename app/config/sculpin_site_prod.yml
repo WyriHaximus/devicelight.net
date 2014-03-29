@@ -1,0 +1,8 @@
+imports:
+- sculpin_site.yml
+
+## Tracking
+google_analytics_tracking_id: UA-63526-24
+google_analytics_tracking_domain: devicelight.net
+piwik_tracking_id: 17
+piwik_tracking_domain: piwik.wyrihaximus.net
