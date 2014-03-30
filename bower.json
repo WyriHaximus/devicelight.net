@@ -1,9 +1,12 @@
 {
-    "name": "DeviceLight.net",
-    "ignore": [
-        ".jshintrc",
-        "**/*"
-    ],
-    "dependencies": {
-    }
+  "name": "DeviceLight.net",
+  "ignore": [
+    ".jshintrc",
+    "**/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bourbon": "~3.1.8",
+    "neat": "~1.6.0"
+  }
 }
