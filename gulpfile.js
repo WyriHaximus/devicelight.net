@@ -31,9 +31,7 @@ gulp.task('scripts', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('scss/dln.scss')
-        .pipe(sass({
-            style: 'expanded'
-        }))
+        .pipe(sass())
         .pipe(cssmin())
         .pipe(gulp.dest('output_dev/css'));
 });
