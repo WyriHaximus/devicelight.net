@@ -1,0 +1,45 @@
+div#meters {
+  @include outer-container;
+  div.meter {
+    @include span-columns(1);
+    width: 200px;
+    height: 200px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #4679BD;
+    div.value {
+      float: left;
+      width: 100%;
+      padding-top: 50%;
+      line-height: 1em;
+      margin-top: -0.5em;
+      text-align: center;
+      color: white;
+    }
+  }
+}
+
+html {
+  &.dim {
+    div#meters {
+      div#level {
+        background-color: red;
+      }
+    }
+  }
+  &.normal {
+    div#meters {
+      div#level {
+        background-color: white;
+      }
+    }
+  }
+  &.bright {
+    div#meters {
+      div#level {
+        background-color: blue;
+      }
+    }
+  }
+}

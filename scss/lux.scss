@@ -1,0 +1,11 @@
+html {
+  &.dim {
+    background-color: shade(white, 5%);
+  }
+  &.normal {
+    background-color: shade(white, 3%);
+  }
+  &.bright {
+    background-color: shade(white, 1%);
+  }
+}
