@@ -1,7 +1,7 @@
 imports:
 - sculpin_site.yml
 
-## Tracking
+## Tracking for Google Analytics and Piwik
 google_analytics_tracking_id: UA-63526-24
 google_analytics_tracking_domain: devicelight.net
 piwik_tracking_id: 17
