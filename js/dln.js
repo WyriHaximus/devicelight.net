@@ -29,9 +29,12 @@ function DeviceLightNet() {
         self.elements.html.classList.remove('dim');
         self.elements.html.classList.remove('normal');
         self.elements.html.classList.remove('bright');
-        self.elements.html.classList.add(self.determineLevel(self.status.lux));
+        var lux = self.status.lux;
+        var level = self.determineLevel(lux);
+        self.elements.html.classList.add(level);
+        self.elements.levelValue.textContent  = level;
 
-        self.elements.luxValue.textContent = self.status.lux + ' lux';
+        self.elements.luxValue.textContent = lux + ' lux';
     };
     self.onDeviceLight = function(event) {
         self.status.browserIsAble = true;
