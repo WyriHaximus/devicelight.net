@@ -62,10 +62,12 @@ function DeviceLightNet() {
             window.DeviceLightNet.onDeviceLight({value: lux});
         }, 100);
     };
-
     window.addEventListener('devicelight', self.onDeviceLight);
 }
 
 window.DeviceLightNet = new DeviceLightNet();
 
+/**
+ * Demo mode, only use when developing
+ */
 window.DeviceLightNet.demo();
